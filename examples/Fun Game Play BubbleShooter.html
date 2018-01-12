@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)http://fun-game-play-bubblesshooter.fbrq.io/fun-game-play-bubblesshooter/index.html -->
+<html lang="en" class="wf-galponblack-n4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+
+    <title>Fun Game Play BubbleShooter</title>
+
+    <link rel="stylesheet" href="./Fun Game Play BubbleShooter_files/app.css" type="text/css">
+
+    <script async="" src="./Fun Game Play BubbleShooter_files/analytics.js.download"></script><script type="text/javascript" src="http://imasdk.googleapis.com/js/sdkloader/ima3.js"></script><link rel="stylesheet" href="./Fun Game Play BubbleShooter_files/Galgon.css" media="all">
+</head>
+<body>
+<div id="content"><canvas width="1280" height="960" style="display: block; touch-action: none; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 1145px; height: 859px; cursor: default; margin-left: 388px; margin-right: -387px;"></canvas></div>
+<div id="ad-container"></div>
+<div id="dummy" style="position:fixed;right:0;bottom:0"></div>
+<div id="orientation"></div>
+
+<script type="text/javascript">
+    var gameName = "fun-game-play-bubblesshooter.min.js";
+
+    //This all here is for cache busting;
+    function addScript(src, buster, callback) {
+        var s = document.createElement('script');
+        s.setAttribute('src', src + '?v=' + buster);
+        if (typeof callback === 'function') {
+            s.onload = callback;
+        }
+        document.body.appendChild(s);
+    }
+
+    addScript('version.js', Date.now(), function () {
+        addScript(gameName, version, function () {
+            /**
+             * Here we create the game
+             */
+            var game = new FGPBubblesShooter.Game.getInstance();
+
+            /**
+             * Below here are all the events that are fired by the game.\
+             * Use these events to show ads or implement highscore
+             *
+             * The events can only be added when the document is done loading (ready), so we have to wait for this
+             */
+            game.device.whenReady(function () {
+                game.events.onGameStart.add(function () {
+                    //Fired when the game starts
+                });
+                game.events.onGameEnd.add(function (score) {
+                    //Fired when the game ends
+                });
+                game.events.onLevelStart.add(function () {
+                    //Fired when the game starts
+                });
+                game.events.onLevelEnd.add(function () {
+                    //Fired when the game starts
+                });
+            });
+            game.start();
+        })
+    })
+</script><script src="./Fun Game Play BubbleShooter_files/version.js.download"></script>
+
+
+
+<div id="heithe-itb" style="display: none;"></div><script src="./Fun Game Play BubbleShooter_files/fun-game-play-bubblesshooter.min.js.download"></script><input id="phaser-input-5230" type="text" style="position: absolute; top: 0px; left: -20px; width: 10px; height: 10px;"></body></html>

@@ -1,0 +1,1146 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"logs",
+				"logsToLoadNow"
+			],
+			[
+				"logsTO",
+				"logsToLoadNow"
+			],
+			[
+				"angle",
+				"angleOfFire"
+			],
+			[
+				"ballS",
+				"ballSpeed"
+			],
+			[
+				"game",
+				"gameOptions"
+			],
+			[
+				"lau",
+				"launchPanel"
+			],
+			[
+				"ball",
+				"ballSize"
+			],
+			[
+				"la",
+				"launchPanel"
+			],
+			[
+				"laun",
+				"launchPanelHeight"
+			],
+			[
+				"score",
+				"scorePanelHeight"
+			],
+			[
+				"band",
+				"bandwidths2"
+			],
+			[
+				"crea",
+				"createdAts2"
+			],
+			[
+				"ro",
+				"roomInfo"
+			],
+			[
+				"up",
+				"updateDatabase"
+			],
+			[
+				"logsT",
+				"logsToLoad"
+			],
+			[
+				"check",
+				"checkDone"
+			],
+			[
+				"results",
+				"resultsLen"
+			],
+			[
+				"file",
+				"fileKey"
+			],
+			[
+				"out",
+				"outputFile"
+			],
+			[
+				"dataS",
+				"dataSetRaw"
+			],
+			[
+				"data",
+				"dataSetRaw"
+			],
+			[
+				"get",
+				"getCount"
+			],
+			[
+				"h1",
+				"h1\tTag"
+			],
+			[
+				"hl",
+				"hlsUri"
+			],
+			[
+				"attemp",
+				"attempt"
+			],
+			[
+				"ingre",
+				"ingrediente_id"
+			],
+			[
+				"ingred",
+				"ingredient"
+			],
+			[
+				"Recei",
+				"ReceitasIngrediente"
+			],
+			[
+				"belongsT",
+				"belongsToMany"
+			],
+			[
+				"in",
+				"ingrediente"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"Regis",
+				"RegistrationRequest"
+			],
+			[
+				"que",
+				"query"
+			],
+			[
+				"mouse",
+				"mouseout"
+			],
+			[
+				"draw",
+				"drawMap1"
+			],
+			[
+				"high",
+				"highlights"
+			],
+			[
+				"user",
+				"usersinfo"
+			],
+			[
+				"wall",
+				"wallHeight"
+			],
+			[
+				"sky",
+				"skybox"
+			],
+			[
+				"inner",
+				"innerHeight"
+			],
+			[
+				"step",
+				"stepY"
+			],
+			[
+				"ste",
+				"stepX"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"st",
+				"states"
+			],
+			[
+				"key",
+				"keyCode"
+			],
+			[
+				"on",
+				"onKey"
+			],
+			[
+				"onTouc",
+				"onTouchEnd"
+			],
+			[
+				"sta",
+				"states"
+			],
+			[
+				"ran",
+				"randomize"
+			],
+			[
+				"wid",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "ballz/js/game.js",
+			"settings":
+			{
+				"buffer_size": 3618,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "SELECT\n    r.id room_id,\n    r.bandwidth,\n    rh.on_date,\n    r.performer_id\n  FROM\n    room_history rh\n  JOIN\n    room r\n  ON\n    rh.room_id = r.id\n  AND \n    rh.status = '0'  \n  AND \n    r.bandwidth = 0\n  AND \n    -- rh.room_id BETWEEN 529747 AND 965000\n    rh.room_id > 529747\n  WHERE\n    (\n      select count(*) from room_history rh2 where rh2.room_id = rh.room_id\n    ) > 1\n  GROUP BY rh.room_id ORDER BY rh.room_id;",
+			"settings":
+			{
+				"buffer_size": 421,
+				"line_ending": "Windows",
+				"name": "SELECT"
+			}
+		},
+		{
+			"contents": "10/01/2018 00:21:07 - CameraHotController::addWsClient >> userid: -1, userip: 178.62.72.160, pageUrl: http://m.camerahot.com/, userAgent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Mobile Safari/537.36, query: \n10/01/2018 00:21:07 - Application::initClient >> userid: -1\n10/01/2018 00:21:07 - ManagerClient::getUserInfoGuest >> Userid: -19\n\n10/01/2018 00:21:38 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> URI: camerahot_chat/1108243/hlsStream/playlist.m3u8?userid=-219--output\n10/01/2018 00:21:38 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> ipAddressClient: 37.48.106.83\n10/01/2018 00:21:38 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> queryStr: userid=-219--output\n10/01/2018 00:21:38 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> userAgent: Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20150101 Firefox/47.0 (Chrome)\n10/01/2018 00:21:38 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> java.lang.NumberFormatException: For input string: \"-219--output\": For input string: \"-219--output\" at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)\n10/01/2018 00:21:38 - CameraHotController::onHTTPCupertinoStreamingSessionDestroy\n10/01/2018 00:21:39 - CameraHotController::onHTTPCupertinoStreamingSessionDestroy\n10/01/2018 00:21:39 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> URI: camerahot_chat/1108243/hlsStream/playlist.m3u8?userid=-219--output\n10/01/2018 00:21:39 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> ipAddressClient: 37.48.106.83\n10/01/2018 00:21:39 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> queryStr: userid=-219--output\n10/01/2018 00:21:39 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> userAgent: Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20150101 Firefox/47.0 (Chrome)\n10/01/2018 00:21:39 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> java.lang.NumberFormatException: For input string: \"-219--output\": For input string: \"-219--output\" at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)\n10/01/2018 00:21:39 - CameraHotController::onHTTPCupertinoStreamingSessionDestroy\n10/01/2018 00:21:39 - CameraHotController::onHTTPCupertinoStreamingSessionDestroy\n\n10/01/2018 00:22:03 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> URI: camerahot_chat/1108243/hlsStream/playlist.m3u8?userid=-19\n10/01/2018 00:22:03 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> ipAddressClient: 37.48.106.83\n10/01/2018 00:22:03 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> queryStr: userid=-19\n10/01/2018 00:22:03 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> userAgent: Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20150101 Firefox/47.0 (Chrome)\n10/01/2018 00:22:03 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> Userid: -19\n10/01/2018 00:22:03 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> HTTP Session accepted for userId: -19\n10/01/2018 00:22:04 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> Overriding existing http session for this userId: 807137\n10/01/2018 00:22:04 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> URI: camerahot_chat/1108243/hlsStream/playlist.m3u8?userid=-19\n10/01/2018 00:22:04 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> ipAddressClient: 37.48.106.83\n10/01/2018 00:22:04 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> queryStr: userid=-19\n10/01/2018 00:22:04 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> userAgent: Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20150101 Firefox/47.0 (Chrome)\n10/01/2018 00:22:04 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> Userid: -19\n10/01/2018 00:22:04 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> Found an existing http session for this userId: -19\n10/01/2018 00:22:04 - CameraHotController::onHTTPCupertinoStreamingSessionDestroy\n10/01/2018 00:22:04 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> Overriding existing http session for this userId: -19",
+			"settings":
+			{
+				"buffer_size": 4273,
+				"line_ending": "Windows",
+				"name": "10/01/2018 00:21:07 - CameraHotController::addWsCl"
+			}
+		},
+		{
+			"contents": "Found IP on room #1672552: 09_01_2018 23:33:31 xx\nFound IP on room #1672645: 09_01_2018 23:32:14 --\nFound IP on room #1672533: 09_01_2018 23:35:31\nFound IP on room #1672649: 09_01_2018 23:46:18\nFound IP on room #1672670: 09_01_2018 23:40:09\nFound IP on room #1672676: 09_01_2018 23:50:34\nFound IP on room #1672699: 09_01_2018 23:56:28\nFound IP on room #1672618: 09_01_2018 23:37:04\nFound IP on room #1672731: 10_01_2018 00:12:37\nFound IP on room #1672748: 10_01_2018 00:19:37 --\nFound IP on room #1672725: 10_01_2018 01:07:25\nFound IP on room #1672836: 10_01_2018 01:31:40",
+			"settings":
+			{
+				"buffer_size": 572,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 203.0,
+		"last_filter": "sssql",
+		"selected_items":
+		[
+			[
+				"sssql",
+				"Set Syntax: SQL"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sshtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"sscss",
+				"Set Syntax: CSS"
+			],
+			[
+				"json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"ssshe",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"min",
+				"Minify::Minify File"
+			],
+			[
+				"ssxml",
+				"Set Syntax: XML"
+			],
+			[
+				"ssjava",
+				"Set Syntax: Java"
+			],
+			[
+				"ssblade",
+				"Set Syntax: Laravel Blade"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"termina",
+				"Terminal: Open in project folder"
+			],
+			[
+				"ter",
+				"Terminal: Open"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"ssbla",
+				"Set Syntax: Laravel Blade"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"sslua",
+				"Set Syntax: Lua"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Prototype"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 524.0
+	},
+	"console":
+	{
+		"height": 120.0,
+		"history":
+		[
+			"clear",
+			"cls",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp/www/phaser-projects",
+		"/C/wamp/www/phaser-projects/ballz",
+		"/C/wamp/www/phaser-projects/ballz/js"
+	],
+	"file_history":
+	[
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 6.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/index.js",
+		"/C/Users/Diogo/Desktop/index2.js",
+		"/C/Users/Diogo/Desktop/nodejs2.log",
+		"/C/Users/Diogo/Desktop/log.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 5.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 4.txt",
+		"/C/wamp/www/phaser-projects/boom-dots/js/game.js",
+		"/C/wamp/www/phaser-projects/ballz/index.html",
+		"/C/wamp/www/phaser-projects/boom-dots/index.html",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171218_1025.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 3.txt",
+		"/C/wamp/www/chart-test/flot/jquery.flot.selection.js",
+		"/C/wamp/www/chart-test/main.js",
+		"/C/Users/Diogo/Desktop/nodejs.log",
+		"/C/Users/Diogo/Desktop/529834.xml",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/package.json",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 2.txt",
+		"/C/Users/Diogo/Desktop/console_0.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171219_1146.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 4.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171123_0958.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 12.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 9.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_2 3.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 8.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 10.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 11.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 9.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 8.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 7.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 7.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_2 2.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 6.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_2.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 5.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 2.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 3.txt",
+		"/C/Users/Diogo/Desktop/index.js",
+		"/C/wamp/www/old/landingPageHybrid/js/chatService.js",
+		"/C/wamp/www/old/landingPageHybrid/js/chatService.min.js",
+		"/C/wamp/www/shaka-test/index.html",
+		"/C/wamp/www/shaka-test/app.js",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 3.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_1.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 2.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0.txt",
+		"/C/Users/Diogo/Downloads/shaka-player-master/shaka-player.uncompiled.js",
+		"/C/wamp/www/dashjs-test/index.html",
+		"/C/wamp/www/old/landingPageHybrid/index.html",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171123_1655.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowzastreamingengine_error.log.2017-12-03",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_3.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/24_11_2017.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/01_12_2017.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 4.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171128_1524.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171124_0847.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171127_1801.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowzastreamingengine_error.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_4.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171121_1202.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171121_1201.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171121_1141.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171121_1114.log",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/queries_3.sql",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/inserts geral.sql",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/queries_final.sql",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171120_1828.log",
+		"/C/wamp/logs/apache_error.log",
+		"/C/wamp/logs/access.log",
+		"/C/wamp/bin/apache/apache2.4.27/conf/extra/httpd-vhosts.conf",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/queries_2.sql",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171019_1542.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/log_heartbeat.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/heartbeat.php",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/teste.php",
+		"/C/Users/Diogo/Desktop/teste.php",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171101_1518.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowzastreamingengine_access.log.2017-10-31",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171030_1309.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/01_11_2017.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/31_10_2017.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowzastreamingengine_error.log.2017-10-31",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171030_1309.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/composer.lock",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171030_1602.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171030_0953.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171030_0838.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171009_1603.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171030_0828.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171030_0828.log",
+		"/C/Users/Diogo/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/wamp/www/webrtc-wowza/play/webrtc.js",
+		"/C/wamp/www/webrtc-wowza/publish/webrtc.js",
+		"/C/wamp/www/webrtc-wowza/publish/index.html",
+		"/C/wamp/bin/apache/apache2.4.23/conf/extra/httpd-vhosts.conf",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20170801_1120.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowzastreamingengine_access.log",
+		"/C/wamp/www/webrtc-wowza/play/index.html",
+		"/C/wamp/www/videojs-hls/index.html",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/admin.password",
+		"/C/wamp/bin/apache/apache2.4.23/conf/httpd.conf",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/admin/user/_form.blade.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/admin/user/index.blade.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/layouts/admin/left-sidebar.blade.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/app/Utils/Utils.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/config/app.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/database/seeds/UsersTableSeeder.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/public/js/admin/DeleteItem.js",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/admin/parts/_success_message.blade.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/site/receitas/index.blade.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/admin/user/create.blade.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/admin/parts/_confirm_delete_modal.blade.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/app/Http/Controllers/Auth/RegisterController.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/site/receitas/create.blade.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/app/Http/Controllers/Site/ReceitasController.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/app/Http/Controllers/Site/RegisterController.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/app/Models/User.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/public/css/admin/style.css",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/layouts/admin/master.blade.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/site/receitas/create.blade.php.bkp",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/admin/parts/_confirm_delete_moda.blade.php",
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/site/receitas/show.blade.php"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Found IP on room ",
+			"Found IP on room",
+			"1420600",
+			"-10",
+			"res.response.who",
+			"-19",
+			"37.48.106.83",
+			"ManagerClient::getUserInfoGuest >> Userid: -219",
+			"219",
+			"-219",
+			"1672748",
+			"addMoveCallback",
+			"ball",
+			"ball.",
+			"ball"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "ballz/js/game.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3618,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2465,
+								2465
+							]
+						],
+						"settings":
+						{
+							"color_helper.box_height": 18,
+							"color_helper.color_scheme": "Packages/Predawn/predawn.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "JavaScript/JavaScript",
+								"enabled": false,
+								"last_updated": 1515431840.1
+							},
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1178.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								279,
+								279
+							]
+						],
+						"settings":
+						{
+							"auto_name": "SELECT",
+							"color_helper.box_height": 18,
+							"color_helper.color_scheme": "Packages/Predawn/predawn.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": null,
+								"current_syntax": "SQL/SQL",
+								"enabled": false,
+								"last_updated": 1515431840.1
+							},
+							"default_dir": "C:\\wamp\\www\\chart-test",
+							"syntax": "Packages/SQL/SQL.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4273,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4273,
+								4273
+							]
+						],
+						"settings":
+						{
+							"auto_name": "10/01/2018 00:21:07 - CameraHotController::addWsCl",
+							"color_helper.box_height": 18,
+							"color_helper.color_scheme": "Packages/Predawn/predawn.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": null,
+								"current_syntax": "Text/Plain text",
+								"enabled": false,
+								"last_updated": 1515431840.1
+							},
+							"default_dir": "C:\\wamp\\www\\phaser-projects",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 572,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								49,
+								49
+							]
+						],
+						"settings":
+						{
+							"color_helper.box_height": 18,
+							"color_helper.color_scheme": "Packages/Predawn/predawn.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": null,
+								"current_syntax": "Diff/Diff",
+								"enabled": false,
+								"last_updated": 1515431840.1
+							},
+							"default_dir": "C:\\wamp\\www\\phaser-projects",
+							"syntax": "Packages/Diff/Diff.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "phaser-projects.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"userindex",
+				"resources\\views\\admin\\user\\index.blade.php"
+			],
+			[
+				"app.",
+				"config\\app.php"
+			],
+			[
+				"seeder",
+				"database\\seeds\\UsersTableSeeder.php"
+			],
+			[
+				"migus",
+				"database\\migrations\\2014_10_12_000000_create_users_table.php"
+			],
+			[
+				"delete",
+				"public\\js\\admin\\DeleteItem.js"
+			],
+			[
+				"user",
+				"database\\seeds\\UsersTableSeeder.php"
+			],
+			[
+				"migrusers",
+				"database\\migrations\\2014_10_12_000000_create_users_table.php"
+			],
+			[
+				"migrrole",
+				"database\\migrations\\2017_09_12_173708_create_roles_table.php"
+			],
+			[
+				"migruser",
+				"database\\migrations\\2014_10_12_000000_create_users_table.php"
+			],
+			[
+				"masetr",
+				"resources\\views\\layouts\\admin\\master.blade.php"
+			],
+			[
+				"migrausers",
+				"database\\migrations\\2014_10_12_000000_create_users_table.php"
+			],
+			[
+				"migrreceitas",
+				"database\\migrations\\2017_09_12_184246_create_receitas_table.php"
+			],
+			[
+				"app.php",
+				"config\\app.php"
+			],
+			[
+				"auth",
+				"resources\\lang\\en\\auth.php"
+			],
+			[
+				"recei",
+				"app\\Http\\Controllers\\Site\\ReceitasController.php"
+			],
+			[
+				"env",
+				".env"
+			],
+			[
+				"master",
+				"resources\\views\\layouts\\master.blade.php"
+			],
+			[
+				".vue",
+				"resources\\assets\\js\\components\\Example.vue"
+			],
+			[
+				"receitacreate",
+				"resources\\views\\site\\receita\\create.blade.php"
+			],
+			[
+				"suporte",
+				"app\\Http\\Controllers\\SuporteController.php"
+			],
+			[
+				"nav",
+				"resources\\views\\layouts\\site\\nav.blade.php"
+			],
+			[
+				"nav.bla",
+				"resources\\views\\layouts\\site\\nav.blade.php"
+			],
+			[
+				"rapi",
+				"routes\\api.php"
+			],
+			[
+				"homecon",
+				"app\\Http\\Controllers\\HomeController.php"
+			],
+			[
+				"receitacontr",
+				"app\\Http\\Controllers\\ReceitasController.php"
+			],
+			[
+				"kernel",
+				"app\\Http\\Kernel.php"
+			],
+			[
+				"kerne",
+				"app\\Console\\Kernel.php"
+			],
+			[
+				"routes/",
+				"routes\\api.php"
+			],
+			[
+				"rwe",
+				"routes\\web.php"
+			],
+			[
+				"show",
+				"resources\\views\\receita\\show.blade.php"
+			],
+			[
+				"utensi",
+				"app\\Models\\Utensilio.php"
+			],
+			[
+				"migrareceit",
+				"database\\migrations\\2017_09_12_184246_create_receitas_table.php"
+			],
+			[
+				"database",
+				"database\\seeds\\DatabaseSeeder.php"
+			],
+			[
+				"migracomen",
+				"database\\migrations\\2017_09_12_183943_create_comentarios_table.php"
+			],
+			[
+				"migrarece",
+				"database\\migrations\\2017_09_12_184246_create_receitas_table.php"
+			],
+			[
+				"ingredi",
+				"app\\Models\\Ingrediente.php"
+			],
+			[
+				"receitas",
+				"app\\Models\\ReceitasIngrediente.php"
+			],
+			[
+				"receita",
+				"app\\Models\\Receita.php"
+			],
+			[
+				"receit",
+				"app\\Models\\ReceitasIngrediente.php"
+			],
+			[
+				"receitasin",
+				"app\\Models\\ReceitasIngrediente.php"
+			],
+			[
+				"hasrela",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\HasRelationships.php"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"s.css",
+				"public\\css\\style.css"
+			],
+			[
+				"migrreceita",
+				"database\\migrations\\2017_09_12_184132_create_receitas_ingredientes_table.php"
+			],
+			[
+				"migrerecei",
+				"database\\migrations\\2017_09_12_184132_create_receitas_ingredientes_table.php"
+			],
+			[
+				"migrareceita",
+				"database\\migrations\\2017_09_12_184246_create_receitas_table.php"
+			],
+			[
+				"seeds/",
+				"database\\seeds\\DatabaseSeeder.php"
+			],
+			[
+				"rolesta",
+				"database\\seeds\\RolesTableSeeder.php"
+			],
+			[
+				"ingredientes",
+				"database\\seeds\\IngredientesTableSeeder.php"
+			],
+			[
+				"medidas_ing",
+				"database\\migrations\\2017_09_12_183616_create_medidas_ingredientes_table.php"
+			],
+			[
+				"registercon",
+				"app\\Http\\Controllers\\Auth\\RegisterController.php"
+			],
+			[
+				"userc",
+				"database\\factories\\UserFactory.php"
+			],
+			[
+				"medidas_in",
+				"database\\migrations\\2017_09_12_183616_create_medidas_ingredientes_table.php"
+			],
+			[
+				"boot",
+				"public\\js\\bootstrap3-typeahead.min.js"
+			],
+			[
+				"boots",
+				"resources\\assets\\js\\bootstrap.js"
+			],
+			[
+				"controller",
+				"app\\Http\\Controllers\\Auth\\LoginController.php"
+			],
+			[
+				"viewslogin",
+				"resources\\views\\auth\\login.blade.php"
+			],
+			[
+				"catego",
+				"app\\Models\\Categoria.php"
+			],
+			[
+				"script",
+				"public\\js\\scripts.js"
+			],
+			[
+				"style.css",
+				"public\\css\\style.css"
+			],
+			[
+				"migraingre",
+				"database\\migrations\\2017_09_12_181841_create_ingredientes_table.php"
+			],
+			[
+				"migingre",
+				"node_modules\\loader-utils\\lib\\getRemainingRequest.js"
+			],
+			[
+				"receitacon",
+				"app\\Http\\Controllers\\ReceitasController.php"
+			],
+			[
+				"create.bla",
+				"resources\\views\\receita\\create.blade.php"
+			],
+			[
+				"ingre",
+				"app\\Models\\Ingrediente.php"
+			],
+			[
+				"apppro",
+				"app\\Providers\\AppServiceProvider.php"
+			],
+			[
+				"postshow",
+				"resources\\views\\posts\\show.blade.php"
+			],
+			[
+				"sidebar",
+				"resources\\views\\layouts\\sidebar.blade.php"
+			],
+			[
+				"appserv",
+				"app\\Providers\\AppServiceProvider.php"
+			],
+			[
+				"tag",
+				"app\\Tag.php"
+			],
+			[
+				"postcontro",
+				"app\\Http\\Controllers\\PostsController.php"
+			],
+			[
+				"postcon",
+				"vendor\\phpunit\\phpunit\\tests\\_files\\ExceptionInAssertPostConditionsTest.php"
+			],
+			[
+				"post",
+				"app\\Post.php"
+			],
+			[
+				"layoutsmaster",
+				"resources\\views\\layouts\\master.blade.php"
+			],
+			[
+				"appservi",
+				"app\\Providers\\AppServiceProvider.php"
+			],
+			[
+				"registr",
+				"app\\Http\\Controllers\\RegistrationController.php"
+			],
+			[
+				"sessionc",
+				"app\\Http\\Controllers\\SessionsController.php"
+			],
+			[
+				"hash",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Hash.php"
+			],
+			[
+				"sess",
+				"app\\Http\\Controllers\\SessionsController.php"
+			],
+			[
+				"postscon",
+				"app\\Http\\Controllers\\PostsController.php"
+			],
+			[
+				"create",
+				"resources\\views\\posts\\create.blade.php"
+			],
+			[
+				"appservice",
+				"app\\Providers\\AppServiceProvider.php"
+			],
+			[
+				"web",
+				"routes\\web.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 38.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 452.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 242.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

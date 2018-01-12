@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SLITHER.IO</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script type="text/javascript" src="../lib/phaser.min.js"></script>
+        <script type="text/javascript" src="js/game.js"></script>
+        <script type="text/javascript" src="js/snake.js"></script>
+        <script type="text/javascript" src="js/playerSnake.js"></script>
+        <script type="text/javascript" src="js/botSnake.js"></script>
+        <script type="text/javascript" src="js/util.js"></script>
+    </head>
+    <body>
+        <script>
+        (function() {
+            var game = new Phaser.Game(800, 500, Phaser.AUTO, null);
+
+            game.state.add('Game', Game);
+            game.state.start('Game');
+        })();
+        </script>
+    </body>
+</html>

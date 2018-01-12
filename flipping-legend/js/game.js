@@ -1,0 +1,148 @@
+var game;
+
+var gameOptions = {
+    gameWidth: 640,
+    tileColors: [0x00ff00, 0x00aa00],
+    verticalTiles: 9
+};
+
+window.onload = function() {
+    var windowWidth = window.innerWidth;
+    var windowHeight = window.innerHeight;
+
+    if(windowWidth > windowHeight) {
+        windowHeight = windowWidth * 1.8;
+    }
+
+    var gameHeight = windowHeight * gameOptions.gameWidth / windowWidth;
+
+    game = new Phaser.Game(gameOptions.gameWidth, gameHeight);
+    game.state.add("PreloadGame", PreloadGame);
+    game.state.add("TheGame", TheGame);
+    game.state.start("PreloadGame");
+};
+
+var PreloadGame = function(){};
+PreloadGame.prototype = {
+    preload: function() {
+        // game.stage.backgroundColor = "#ccc";
+        game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+        // game.scale.scaleMode = Phaser.ScaleManager.NO_SCALE;
+        game.scale.pageAlignHorizontally = true;
+        game.scale.pageAlignVertically = true;
+        game.stage.disableVisibilityChange = true;
+
+        game.load.image("tile", "assets/sprites/tile.png");
+        game.load.image("hero", "assets/sprites/hero.png");
+    },
+    create: function() {
+        game.state.start("TheGame");
+    }
+};
+
+var TheGame = function(){};
+TheGame.prototype = {
+    create: function() {
+        this.moves = 0;
+        this.tileSize = game.height / gameOptions.verticalTiles;
+
+        var placedTiles = 0;
+        var offsetX = (game.width  -this.tileSize * 3) / 2;
+
+        this.tileArray = [];
+        this.tileGroup = game.add.group();
+        this.tileGroup.x = offsetX;
+
+        this.tileTween = game.add.tween(this.tileGroup).to({
+            y: this.tileSize
+        }, 100, Phaser.Easing.Linear.None);
+
+        this.tileTween.onComplete.add(function() {
+            this.tileGroup.y = 0;
+
+            this.tileGroup.forEach(function(child) {
+                child.y += this.tileSize;
+            }, this);
+
+            for (var i = 0; i < 3; i++) {
+                this.tileArray[this.moves % this.tileArray.length][i].y -= (gameOptions.verticalTiles + 1) * this.tileSize;
+            }
+            this.moves++;
+        }, this);
+
+        for (var i = 0; i < gameOptions.verticalTiles + 1; i++) {
+            this.tileArray[i] = [];
+
+            for (var j = 0; j < 3; j++) {
+                var tile = game.add.sprite(j * this.tileSize, game.height - i * this.tileSize, "tile");
+                tile.anchor.set(0,1);
+                tile.width = this.tileSize;
+                tile.height = this.tileSize;
+                tile.tint = gameOptions.tileColors[placedTiles % 2];
+
+                this.tileGroup.add(tile);
+                this.tileArray[i][j] = tile;
+                placedTiles++;
+            }
+        }
+
+        this.heroColumn = 1;
+        this.heroCanMove = true;
+
+        this.hero = game.add.sprite(this.tileGroup.x + this.tileSize, game.height - 2 * this.tileSize, "hero");
+        this.hero.width = this.tileSize;
+        this.hero.height = this.tileSize;
+        this.hero.anchor.set(0,1);
+
+        this.heroTween = game.add.tween(this.hero);
+
+        this.heroTween.onComplete.add(function(){
+            this.heroCanMove = true;
+            this.hero.x = this.tileGroup.x + this.tileSize * this.heroColumn;
+            this.heroWrap.visible = false;
+        }, this);
+
+        this.heroWrap = game.add.sprite(this.tileGroup.x + this.tileSize, game.height - 2 * this.tileSize, "hero");
+        this.heroWrap.width = this.tileSize;
+        this.heroWrap.height = this.tileSize;
+        this.heroWrap.anchor.set(0,1);
+        this.heroWrap.visible = false;
+        this.heroWrapTween = game.add.tween(this.heroWrap);
+
+        var mask = game.add.graphics(this.tileGroup.x, this.tileGroup.y);
+        mask.beginFill(0xffffff);
+        mask.drawRect(0,0,this.tileSize * 3, game.height);
+        this.hero.mask = mask;
+        this.heroWrap.mask = mask;
+
+        game.input.onDown.add(this.moveHero, this);
+    },
+    moveHero: function(e) {
+        if(this.heroCanMove) {
+            this.tileTween.start();
+
+            this.heroCanMove = false;
+
+            var direction = e.position.x < game.width / 2 ? -1 : 1;
+            var nextColumn = Phaser.Math.wrap(this.heroColumn + direction, 0, 3);
+
+            this.heroTween.timeline = [];
+
+            this.heroTween.to({
+                x: this.hero.x + this.tileSize * direction
+            }, 100, Phaser.Easing.Cubic.InOut, true);
+
+            if(Math.abs(nextColumn - this.heroColumn) != 1) {
+                this.heroWrap.visible = true;
+                this.heroWrap.x = nextColumn == 0 ? this.tileGroup.x - this.tileSize : this.tileGroup.x + 3 * this.tileSize;
+
+                this.heroWrapTween.timeline = [];
+                this.heroWrapTween.to({
+                    x: this.heroWrap.x + this.tileSize * direction
+                }, 100, Phaser.Easing.Cubic.InOut, true);
+            }
+
+            this.heroColumn = nextColumn;
+        }
+    }
+};
