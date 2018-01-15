@@ -268,6 +268,10 @@ TheGame.prototype = {
 
             var scoreText = game.add.bitmapText(game.width / 2, game.height / 5, "font", "YOUR SCORE", 72);
             scoreText.anchor.set(0.5);
+
+            var scoreDisplayText = game.add.bitmapText(game.width / 2, game.height / 5 + 140, "font", this.score.toString(), 144);
+            scoreDisplayText.anchor.set(0.5)
+
             localStorage.setItem(gameOptions.localStorageName, JSON.stringify({
                 score: Math.max(this.score, this.savedData.score)
             }));
