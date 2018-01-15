@@ -4,6 +4,86 @@
 		"selected_items":
 		[
 			[
+				"localS",
+				"localStorage"
+			],
+			[
+				"gameO",
+				"gameOverSound"
+			],
+			[
+				"came",
+				"cameraGroup"
+			],
+			[
+				"crateS",
+				"crateScoreText"
+			],
+			[
+				"GRI",
+				"GROUNDHEIGHT"
+			],
+			[
+				"fallin",
+				"fallingHeight"
+			],
+			[
+				"local",
+				"localStorageName"
+			],
+			[
+				"block",
+				"blocksPerLine"
+			],
+			[
+				"blocks",
+				"blocksPerLine"
+			],
+			[
+				"scro",
+				"scorePanelHeight"
+			],
+			[
+				"place",
+				"placedBlocks"
+			],
+			[
+				"score",
+				"scorePanel"
+			],
+			[
+				"remo",
+				"removeCrate"
+			],
+			[
+				"scale",
+				"scaleTween"
+			],
+			[
+				"game",
+				"gameOptions"
+			],
+			[
+				"time",
+				"timeLimit"
+			],
+			[
+				"max",
+				"maxHeight"
+			],
+			[
+				"camer",
+				"cameraGroup"
+			],
+			[
+				"pre",
+				"preUpdate"
+			],
+			[
+				"crate",
+				"crateGroup"
+			],
+			[
 				"logs",
 				"logsToLoadNow"
 			],
@@ -20,10 +100,6 @@
 				"ballSpeed"
 			],
 			[
-				"game",
-				"gameOptions"
-			],
-			[
 				"lau",
 				"launchPanel"
 			],
@@ -38,10 +114,6 @@
 			[
 				"laun",
 				"launchPanelHeight"
-			],
-			[
-				"score",
-				"scorePanelHeight"
 			],
 			[
 				"band",
@@ -208,37 +280,20 @@
 	"buffers":
 	[
 		{
-			"file": "ballz/js/game.js",
+			"file": "ballz/js/game-v2.js",
 			"settings":
 			{
-				"buffer_size": 3618,
+				"buffer_size": 5764,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "SELECT\n    r.id room_id,\n    r.bandwidth,\n    rh.on_date,\n    r.performer_id\n  FROM\n    room_history rh\n  JOIN\n    room r\n  ON\n    rh.room_id = r.id\n  AND \n    rh.status = '0'  \n  AND \n    r.bandwidth = 0\n  AND \n    -- rh.room_id BETWEEN 529747 AND 965000\n    rh.room_id > 529747\n  WHERE\n    (\n      select count(*) from room_history rh2 where rh2.room_id = rh.room_id\n    ) > 1\n  GROUP BY rh.room_id ORDER BY rh.room_id;",
+			"file": "tipsy-tower/js/game-v4.js",
 			"settings":
 			{
-				"buffer_size": 421,
-				"line_ending": "Windows",
-				"name": "SELECT"
-			}
-		},
-		{
-			"contents": "10/01/2018 00:21:07 - CameraHotController::addWsClient >> userid: -1, userip: 178.62.72.160, pageUrl: http://m.camerahot.com/, userAgent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Mobile Safari/537.36, query: \n10/01/2018 00:21:07 - Application::initClient >> userid: -1\n10/01/2018 00:21:07 - ManagerClient::getUserInfoGuest >> Userid: -19\n\n10/01/2018 00:21:38 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> URI: camerahot_chat/1108243/hlsStream/playlist.m3u8?userid=-219--output\n10/01/2018 00:21:38 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> ipAddressClient: 37.48.106.83\n10/01/2018 00:21:38 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> queryStr: userid=-219--output\n10/01/2018 00:21:38 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> userAgent: Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20150101 Firefox/47.0 (Chrome)\n10/01/2018 00:21:38 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> java.lang.NumberFormatException: For input string: \"-219--output\": For input string: \"-219--output\" at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)\n10/01/2018 00:21:38 - CameraHotController::onHTTPCupertinoStreamingSessionDestroy\n10/01/2018 00:21:39 - CameraHotController::onHTTPCupertinoStreamingSessionDestroy\n10/01/2018 00:21:39 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> URI: camerahot_chat/1108243/hlsStream/playlist.m3u8?userid=-219--output\n10/01/2018 00:21:39 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> ipAddressClient: 37.48.106.83\n10/01/2018 00:21:39 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> queryStr: userid=-219--output\n10/01/2018 00:21:39 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> userAgent: Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20150101 Firefox/47.0 (Chrome)\n10/01/2018 00:21:39 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> java.lang.NumberFormatException: For input string: \"-219--output\": For input string: \"-219--output\" at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)\n10/01/2018 00:21:39 - CameraHotController::onHTTPCupertinoStreamingSessionDestroy\n10/01/2018 00:21:39 - CameraHotController::onHTTPCupertinoStreamingSessionDestroy\n\n10/01/2018 00:22:03 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> URI: camerahot_chat/1108243/hlsStream/playlist.m3u8?userid=-19\n10/01/2018 00:22:03 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> ipAddressClient: 37.48.106.83\n10/01/2018 00:22:03 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> queryStr: userid=-19\n10/01/2018 00:22:03 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> userAgent: Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20150101 Firefox/47.0 (Chrome)\n10/01/2018 00:22:03 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> Userid: -19\n10/01/2018 00:22:03 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> HTTP Session accepted for userId: -19\n10/01/2018 00:22:04 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> Overriding existing http session for this userId: 807137\n10/01/2018 00:22:04 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> URI: camerahot_chat/1108243/hlsStream/playlist.m3u8?userid=-19\n10/01/2018 00:22:04 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> ipAddressClient: 37.48.106.83\n10/01/2018 00:22:04 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> queryStr: userid=-19\n10/01/2018 00:22:04 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> userAgent: Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20150101 Firefox/47.0 (Chrome)\n10/01/2018 00:22:04 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> Userid: -19\n10/01/2018 00:22:04 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> Found an existing http session for this userId: -19\n10/01/2018 00:22:04 - CameraHotController::onHTTPCupertinoStreamingSessionDestroy\n10/01/2018 00:22:04 - CameraHotController::onHTTPCupertinoStreamingSessionCreate >> Overriding existing http session for this userId: -19",
-			"settings":
-			{
-				"buffer_size": 4273,
-				"line_ending": "Windows",
-				"name": "10/01/2018 00:21:07 - CameraHotController::addWsCl"
-			}
-		},
-		{
-			"contents": "Found IP on room #1672552: 09_01_2018 23:33:31 xx\nFound IP on room #1672645: 09_01_2018 23:32:14 --\nFound IP on room #1672533: 09_01_2018 23:35:31\nFound IP on room #1672649: 09_01_2018 23:46:18\nFound IP on room #1672670: 09_01_2018 23:40:09\nFound IP on room #1672676: 09_01_2018 23:50:34\nFound IP on room #1672699: 09_01_2018 23:56:28\nFound IP on room #1672618: 09_01_2018 23:37:04\nFound IP on room #1672731: 10_01_2018 00:12:37\nFound IP on room #1672748: 10_01_2018 00:19:37 --\nFound IP on room #1672725: 10_01_2018 01:07:25\nFound IP on room #1672836: 10_01_2018 01:31:40",
-			"settings":
-			{
-				"buffer_size": 572,
+				"buffer_size": 10173,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -250,17 +305,21 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 203.0,
-		"last_filter": "sssql",
+		"height": 392.0,
+		"last_filter": "ssjs",
 		"selected_items":
 		[
 			[
-				"sssql",
-				"Set Syntax: SQL"
-			],
-			[
 				"ssjs",
 				"Set Syntax: JavaScript"
+			],
+			[
+				"json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"sssql",
+				"Set Syntax: SQL"
 			],
 			[
 				"sshtml",
@@ -269,10 +328,6 @@
 			[
 				"sscss",
 				"Set Syntax: CSS"
-			],
-			[
-				"json",
-				"Pretty JSON: Format (Pretty Print) JSON"
 			],
 			[
 				"ssshe",
@@ -364,19 +419,42 @@
 	[
 		"/C/wamp/www/phaser-projects",
 		"/C/wamp/www/phaser-projects/ballz",
-		"/C/wamp/www/phaser-projects/ballz/js"
+		"/C/wamp/www/phaser-projects/ballz/js",
+		"/C/wamp/www/phaser-projects/tipsy-tower",
+		"/C/wamp/www/phaser-projects/tipsy-tower/js"
 	],
 	"file_history":
 	[
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 6.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 7.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 11.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/index.js",
+		"/C/Users/Diogo/Desktop/1676295.xml",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 10.txt",
+		"/C/wamp/www/phaser-projects/ballz/index.html",
+		"/C/wamp/www/phaser-projects/tipsy-tower/js/game-v4.js",
+		"/C/Users/Diogo/Desktop/1676295_.xml",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 2.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_2.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 3.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 9.txt",
+		"/C/wamp/www/phaser-projects/tipsy-tower/index.html",
+		"/C/wamp/www/phaser-projects/tipsy-tower/js/game.js",
+		"/C/wamp/www/phaser-projects/tipsy-tower/js/game-v2.js",
+		"/C/wamp/www/phaser-projects/tipsy-tower/js/game-v3.js",
+		"/C/Users/Diogo/Desktop/page.html",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 8.txt",
+		"/C/wamp/www/phaser-projects/tipsy-tower/js/box2d-plugin-full.js",
+		"/C/wamp/www/phaser-projects/ballz/js/game.js",
+		"/C/wamp/bin/apache/apache2.4.27/conf/httpd.conf",
+		"/C/wamp/bin/apache/apache2.4.27/conf/extra/httpd-vhosts.conf",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/log.log",
+		"/C/Users/Diogo/Desktop/log.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 6.txt",
 		"/C/Users/Diogo/Desktop/index2.js",
 		"/C/Users/Diogo/Desktop/nodejs2.log",
-		"/C/Users/Diogo/Desktop/log.log",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 5.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 4.txt",
 		"/C/wamp/www/phaser-projects/boom-dots/js/game.js",
-		"/C/wamp/www/phaser-projects/ballz/index.html",
 		"/C/wamp/www/phaser-projects/boom-dots/index.html",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171218_1025.log",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 3.txt",
@@ -395,19 +473,11 @@
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 9.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_2 3.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 8.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 10.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 11.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 9.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 8.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 7.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 7.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_2 2.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 6.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_2.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 5.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 2.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 3.txt",
 		"/C/Users/Diogo/Desktop/index.js",
 		"/C/wamp/www/old/landingPageHybrid/js/chatService.js",
 		"/C/wamp/www/old/landingPageHybrid/js/chatService.min.js",
@@ -441,7 +511,6 @@
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171120_1828.log",
 		"/C/wamp/logs/apache_error.log",
 		"/C/wamp/logs/access.log",
-		"/C/wamp/bin/apache/apache2.4.27/conf/extra/httpd-vhosts.conf",
 		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/queries_2.sql",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171019_1542.log",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/log_heartbeat.txt",
@@ -483,19 +552,7 @@
 		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/public/js/admin/DeleteItem.js",
 		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/admin/parts/_success_message.blade.php",
 		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/site/receitas/index.blade.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/admin/user/create.blade.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/admin/parts/_confirm_delete_modal.blade.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/app/Http/Controllers/Auth/RegisterController.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/site/receitas/create.blade.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/app/Http/Controllers/Site/ReceitasController.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/app/Http/Controllers/Site/RegisterController.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/app/Models/User.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/public/css/admin/style.css",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/layouts/admin/master.blade.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/site/receitas/create.blade.php.bkp",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/admin/parts/_confirm_delete_moda.blade.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/site/receitas/show.blade.php"
+		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/admin/user/create.blade.php"
 	],
 	"find":
 	{
@@ -514,6 +571,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"159.203.42.143",
+			"font",
+			"remove",
+			"hit03",
+			"hit01",
+			"title",
+			"trajectory",
+			"debug: set heartbeat interval for client|debug: cleared heartbeat timeout for client",
+			"got heartbeat packet",
+			"actionid=\"300\"|actionId=\"301\"",
+			"#date",
+			"1676295",
+			"09/01/2018 ",
+			"this.timeEvent",
+			"ground",
+			"166900",
+			"1639000",
 			"Found IP on room ",
 			"Found IP on room",
 			"1420600",
@@ -546,24 +620,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "ballz/js/game.js",
+					"file": "ballz/js/game-v2.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3618,
+						"buffer_size": 5764,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2465,
-								2465
+								0,
+								0
 							]
 						],
 						"settings":
@@ -581,122 +655,35 @@
 								"current_ext": ".js",
 								"current_syntax": "JavaScript/JavaScript",
 								"enabled": false,
-								"last_updated": 1515431840.1
+								"last_updated": 1515672112.19
 							},
 							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1178.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 421,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								279,
-								279
-							]
-						],
-						"settings":
-						{
-							"auto_name": "SELECT",
-							"color_helper.box_height": 18,
-							"color_helper.color_scheme": "Packages/Predawn/predawn.tmTheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.preview_meta":
-							{
-							},
-							"color_helper.scan":
-							{
-								"current_ext": null,
-								"current_syntax": "SQL/SQL",
-								"enabled": false,
-								"last_updated": 1515431840.1
-							},
-							"default_dir": "C:\\wamp\\www\\chart-test",
-							"syntax": "Packages/SQL/SQL.sublime-syntax",
-							"tab_size": 2,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 42.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
+					"file": "tipsy-tower/js/game-v4.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4273,
+						"buffer_size": 10173,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4273,
-								4273
-							]
-						],
-						"settings":
-						{
-							"auto_name": "10/01/2018 00:21:07 - CameraHotController::addWsCl",
-							"color_helper.box_height": 18,
-							"color_helper.color_scheme": "Packages/Predawn/predawn.tmTheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.preview_meta":
-							{
-							},
-							"color_helper.scan":
-							{
-								"current_ext": null,
-								"current_syntax": "Text/Plain text",
-								"enabled": false,
-								"last_updated": 1515431840.1
-							},
-							"default_dir": "C:\\wamp\\www\\phaser-projects",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 572,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								49,
-								49
+								10154,
+								10154
 							]
 						],
 						"settings":
@@ -711,19 +698,20 @@
 							},
 							"color_helper.scan":
 							{
-								"current_ext": null,
-								"current_syntax": "Diff/Diff",
+								"current_ext": ".js",
+								"current_syntax": "JavaScript/JavaScript",
 								"enabled": false,
-								"last_updated": 1515431840.1
+								"last_updated": 1515672112.19
 							},
-							"default_dir": "C:\\wamp\\www\\phaser-projects",
-							"syntax": "Packages/Diff/Diff.sublime-syntax"
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4208.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
