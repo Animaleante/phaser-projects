@@ -31,7 +31,7 @@ TheGame.prototype = {
 
         game.physics.startSystem(Phaser.Physics.ARCADE);
 
-        this.scorePanel = game.add.image(0,0, "panel");
+        this.scorePanel = game.add.sprite(0,0, "panel");
         this.scorePanel.width = game.width;
         this.scorePanel.height = Math.round(game.height * gameOptions.scorePanelHeight);
 
