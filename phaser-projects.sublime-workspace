@@ -4,6 +4,98 @@
 		"selected_items":
 		[
 			[
+				"U",
+				"UTILS"
+			],
+			[
+				"config",
+				"CONFIG"
+			],
+			[
+				"parseL",
+				"parseLogXml"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"dis",
+				"distanceY"
+			],
+			[
+				"di",
+				"distanceX"
+			],
+			[
+				"pla",
+				"player"
+			],
+			[
+				"player",
+				"playerSpeed"
+			],
+			[
+				"blo",
+				"blocksPerLine"
+			],
+			[
+				"scr",
+				"scrollTween"
+			],
+			[
+				"scroll",
+				"scrollTween"
+			],
+			[
+				"extraBa",
+				"extraBall"
+			],
+			[
+				"extraB",
+				"extraBallGroup"
+			],
+			[
+				"ballS",
+				"ballSpeed"
+			],
+			[
+				"extra",
+				"extraBalls"
+			],
+			[
+				"scorePanel",
+				"scorePanelHeight"
+			],
+			[
+				"block",
+				"blockPosition"
+			],
+			[
+				"place",
+				"placeExtraBall"
+			],
+			[
+				"extraBall",
+				"extraBallProbability"
+			],
+			[
+				"balls",
+				"ballsGroup"
+			],
+			[
+				"lo",
+				"log\tconsole.log"
+			],
+			[
+				"level",
+				"levelGroup"
+			],
+			[
+				"tile",
+				"tileAndMargin"
+			],
+			[
 				"localS",
 				"localStorage"
 			],
@@ -32,20 +124,12 @@
 				"localStorageName"
 			],
 			[
-				"block",
-				"blocksPerLine"
-			],
-			[
 				"blocks",
 				"blocksPerLine"
 			],
 			[
 				"scro",
 				"scorePanelHeight"
-			],
-			[
-				"place",
-				"placedBlocks"
 			],
 			[
 				"score",
@@ -94,10 +178,6 @@
 			[
 				"angle",
 				"angleOfFire"
-			],
-			[
-				"ballS",
-				"ballSpeed"
 			],
 			[
 				"lau",
@@ -280,19 +360,10 @@
 	"buffers":
 	[
 		{
-			"file": "ballz/js/game-v2.js",
+			"file": "ballz/js/game-v3-1.js",
 			"settings":
 			{
-				"buffer_size": 5764,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "tipsy-tower/js/game-v4.js",
-			"settings":
-			{
-				"buffer_size": 10173,
+				"buffer_size": 11359,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -306,16 +377,32 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "ssjs",
+		"last_filter": "SSJS",
 		"selected_items":
 		[
 			[
-				"ssjs",
+				"SSJS",
 				"Set Syntax: JavaScript"
 			],
 			[
 				"json",
 				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Pull"
+			],
+			[
+				"ginsl",
+				"Package Control: Install Package"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JavaScript"
 			],
 			[
 				"sssql",
@@ -362,10 +449,6 @@
 				"Terminal: Open"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
 				"pack",
 				"Package Control: List Packages"
 			],
@@ -401,6 +484,7 @@
 		"height": 120.0,
 		"history":
 		[
+			"git status",
 			"clear",
 			"cls",
 			"ls"
@@ -420,24 +504,95 @@
 		"/C/wamp/www/phaser-projects",
 		"/C/wamp/www/phaser-projects/ballz",
 		"/C/wamp/www/phaser-projects/ballz/js",
-		"/C/wamp/www/phaser-projects/tipsy-tower",
-		"/C/wamp/www/phaser-projects/tipsy-tower/js"
+		"/C/wamp/www/phaser-projects/space-is-key",
+		"/C/wamp/www/phaser-projects/space-is-key/js"
 	],
 	"file_history":
 	[
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/utils.js",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/index5.js",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/config.js",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/conSettings.js",
+		"/C/Users/Diogo/Desktop/config.js",
+		"/C/Users/Diogo/Desktop/utils.js",
+		"/C/Users/Diogo/Desktop/index5.js",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/index.js",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20180202_1326.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/index4.js",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/redisManager.js",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/index.js",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 28.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 27.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_1 3.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 26.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 25.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 24.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 23.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_1 2.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 22.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 21.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 20.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 19.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 17.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 18.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 16.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/log1207423.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 15.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 13.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 14.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 12.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 11.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 10.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 9.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 7.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 8.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/nodejs.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/wowza-streaming-error_20180129_1635.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/index3.js",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 4.txt",
+		"/C/Users/Diogo/Desktop/index3.js",
+		"/C/Users/Diogo/Desktop/nodejs.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 2.txt",
+		"/C/Users/Diogo/Desktop/log.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 4.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 5.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 6.txt",
+		"/C/wamp/www/phaser-projects/space-is-key/js/gameTitleShake.js",
+		"/C/wamp/www/phaser-projects/ballz/js/game-v3.js",
+		"/C/wamp/www/phaser-projects/ballz/index.html",
+		"/C/wamp/www/phaser-projects/magick/js/game.js",
+		"/C/wamp/www/phaser-projects/magick/index.html",
+		"/C/Users/Diogo/AppData/Local/Temp/Rar$DRa0.993/index.html",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/wowza-streaming_20180129_1557.log",
+		"/C/Users/Diogo/Desktop/wowza-streaming_20180129_1557.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/wowzastreamingengine_error.log",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_1.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 5.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 6.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171219_1146.log",
+		"/C/wamp/www/phaser-projects/tipsy-tower/js/game-v4.js",
+		"/C/wamp/www/phaser-projects/ballz/js/game-v2.js",
+		"/C/wamp/www/phaser-projects/warp-shift/js/game.js",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 2.txt",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 3.txt",
+		"/C/Users/Diogo/Desktop/reverse.conf",
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171123_0958.log",
+		"/C/Users/Diogo/AppData/Local/Temp/Rar$DRa0.602/index.html",
+		"/C/Users/Diogo/AppData/Local/Temp/Rar$DRa0.019/index.html",
+		"/C/wamp/www/phaser-projects/tipsy-tower/index.html",
+		"/C/wamp/www/phaser-projects/warp-shift/index.html",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 7.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 11.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/index.js",
 		"/C/Users/Diogo/Desktop/1676295.xml",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 10.txt",
-		"/C/wamp/www/phaser-projects/ballz/index.html",
-		"/C/wamp/www/phaser-projects/tipsy-tower/js/game-v4.js",
 		"/C/Users/Diogo/Desktop/1676295_.xml",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 2.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_2.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 3.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 9.txt",
-		"/C/wamp/www/phaser-projects/tipsy-tower/index.html",
 		"/C/wamp/www/phaser-projects/tipsy-tower/js/game.js",
 		"/C/wamp/www/phaser-projects/tipsy-tower/js/game-v2.js",
 		"/C/wamp/www/phaser-projects/tipsy-tower/js/game-v3.js",
@@ -448,27 +603,17 @@
 		"/C/wamp/bin/apache/apache2.4.27/conf/httpd.conf",
 		"/C/wamp/bin/apache/apache2.4.27/conf/extra/httpd-vhosts.conf",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/log.log",
-		"/C/Users/Diogo/Desktop/log.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 6.txt",
 		"/C/Users/Diogo/Desktop/index2.js",
 		"/C/Users/Diogo/Desktop/nodejs2.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 5.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 4.txt",
 		"/C/wamp/www/phaser-projects/boom-dots/js/game.js",
 		"/C/wamp/www/phaser-projects/boom-dots/index.html",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171218_1025.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 3.txt",
 		"/C/wamp/www/chart-test/flot/jquery.flot.selection.js",
 		"/C/wamp/www/chart-test/main.js",
-		"/C/Users/Diogo/Desktop/nodejs.log",
 		"/C/Users/Diogo/Desktop/529834.xml",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/package.json",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 2.txt",
 		"/C/Users/Diogo/Desktop/console_0.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171219_1146.log",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 4.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171123_0958.log",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_0 12.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 9.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_2 3.txt",
@@ -476,7 +621,6 @@
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 7.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_2 2.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 6.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_1 5.txt",
 		"/C/Users/Diogo/Desktop/index.js",
 		"/C/wamp/www/old/landingPageHybrid/js/chatService.js",
@@ -484,9 +628,6 @@
 		"/C/wamp/www/shaka-test/index.html",
 		"/C/wamp/www/shaka-test/app.js",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 3.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_1.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 2.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0.txt",
 		"/C/Users/Diogo/Downloads/shaka-player-master/shaka-player.uncompiled.js",
 		"/C/wamp/www/dashjs-test/index.html",
 		"/C/wamp/www/old/landingPageHybrid/index.html",
@@ -495,64 +636,7 @@
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_3.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/24_11_2017.txt",
 		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/01_12_2017.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-3/console_0 4.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171128_1524.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171124_0847.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171127_1801.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowzastreamingengine_error.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/console_4.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171121_1202.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171121_1201.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171121_1141.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171121_1114.log",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/queries_3.sql",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/inserts geral.sql",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/queries_final.sql",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171120_1828.log",
-		"/C/wamp/logs/apache_error.log",
-		"/C/wamp/logs/access.log",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/queries_2.sql",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171019_1542.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/log_heartbeat.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/heartbeat.php",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/teste.php",
-		"/C/Users/Diogo/Desktop/teste.php",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171101_1518.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowzastreamingengine_access.log.2017-10-31",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171030_1309.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/01_11_2017.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/31_10_2017.txt",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowzastreamingengine_error.log.2017-10-31",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171030_1309.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/composer.lock",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171030_1602.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171030_0953.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171030_0838.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171009_1603.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171030_0828.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming-error_20171030_0828.log",
-		"/C/Users/Diogo/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/C/wamp/www/webrtc-wowza/play/webrtc.js",
-		"/C/wamp/www/webrtc-wowza/publish/webrtc.js",
-		"/C/wamp/www/webrtc-wowza/publish/index.html",
-		"/C/wamp/bin/apache/apache2.4.23/conf/extra/httpd-vhosts.conf",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20170801_1120.log",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowzastreamingengine_access.log",
-		"/C/wamp/www/webrtc-wowza/play/index.html",
-		"/C/wamp/www/videojs-hls/index.html",
-		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/admin.password",
-		"/C/wamp/bin/apache/apache2.4.23/conf/httpd.conf",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/database/migrations/2014_10_12_000000_create_users_table.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/admin/user/_form.blade.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/admin/user/index.blade.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/layouts/admin/left-sidebar.blade.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/app/Utils/Utils.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/config/app.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/database/seeds/UsersTableSeeder.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/public/js/admin/DeleteItem.js",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/admin/parts/_success_message.blade.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/site/receitas/index.blade.php",
-		"/C/Users/Diogo/GitHub/TDS171A_Interdisciplinar/PHP/soboru/resources/views/admin/user/create.blade.php"
+		"/C/Users/Diogo/AppData/Local/Temp/fz3temp-2/wowza-streaming_20171128_1524.log"
 	],
 	"find":
 	{
@@ -571,6 +655,91 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"chunkSize",
+			"this.",
+			"Object.keys(logs)[0]",
+			"loadInterval",
+			"res.log",
+			"NoHttpResponseException",
+			"org.apache.http.NoHttpResponseException: 54.165.195.40:80 failed to respond\n\tat org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:143)\n\tat org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)\n\tat org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)\n\tat org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)\n\tat org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)\n\tat org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)\n\tat org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)\n\tat org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:254)\n\tat org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)\n\tat org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)\n\tat org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)\n\tat org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)\n\tat org.apache.http.client.fluent.Executor.execute(Executor.java:206)\n\tat org.apache.http.client.fluent.Async$ExecRunnable.run(Async.java:79)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:745)",
+			"588053",
+			"onConnect.*588053",
+			"2018-02-01\t",
+			"\u001b[0m",
+			"\u001b[33;1m",
+			"\u001b[32m ",
+			"#date",
+			"50464",
+			"#date",
+			"01/02/2018",
+			"barbapapa",
+			"763708",
+			"publish",
+			"sendMessage.*trav",
+			"trav",
+			"ta trava",
+			"#date",
+			"sendMessage.*trav",
+			"trav",
+			"sendMessage.*trav",
+			"trav",
+			"11:07:37",
+			"189.92.215.114",
+			"-41",
+			"travesti",
+			"travesseiro",
+			"Found query on message on room",
+			"Found query on message",
+			"NoHttpResponseException",
+			"org.apache.http.NoHttpResponseException: 54.165.195.40:80 failed to respond\n\tat org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:143)\n\tat org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)\n\tat org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)\n\tat org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)\n\tat org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)\n\tat org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)\n\tat org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)\n\tat org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:254)\n\tat org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)\n\tat org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)\n\tat org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)\n\tat org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)\n\tat org.apache.http.client.fluent.Executor.execute(Executor.java:206)\n\tat org.apache.http.client.fluent.Async$ExecRunnable.run(Async.java:79)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:745)",
+			": ",
+			"room #",
+			"Found query on message on ",
+			"entrava",
+			"atraves",
+			"travesseiro",
+			"travesti",
+			"11:",
+			"Found query on message",
+			"roomId",
+			"travesti",
+			"travesseiro",
+			"entrava",
+			"Found query on message",
+			"emitter",
+			"rock",
+			"error",
+			"#date",
+			"Stream not found",
+			"Session not accepted",
+			"#date",
+			"16939",
+			"1693956",
+			"NoHttpResponseException",
+			"org.apache.http.NoHttpResponseException: 54.165.195.40:80 failed to respond\n\tat org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:143)\n\tat org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)\n\tat org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)\n\tat org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)\n\tat org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)\n\tat org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)\n\tat org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)\n\tat org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:254)\n\tat org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)\n\tat org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)\n\tat org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)\n\tat org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)\n\tat org.apache.http.client.fluent.Executor.execute(Executor.java:206)\n\tat org.apache.http.client.fluent.Async$ExecRunnable.run(Async.java:79)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:745)",
+			"NoHttpResponseException",
+			"org.apache.http.NoHttpResponseException: 54.165.195.40:80 failed to respond\n\tat org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:143)\n\tat org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)\n\tat org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)\n\tat org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)\n\tat org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)\n\tat org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)\n\tat org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)\n\tat org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:254)\n\tat org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)\n\tat org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)\n\tat org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)\n\tat org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)\n\tat org.apache.http.client.fluent.Executor.execute(Executor.java:206)\n\tat org.apache.http.client.fluent.Async$ExecRunnable.run(Async.java:79)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:745)",
+			"22:43:34",
+			"#date",
+			"18:01:10",
+			"1093667",
+			"failedCheck: Client is blocked from starting paid chats",
+			"levels[this.level][i][j]",
+			"21:29:52",
+			"NoHttpResponseException",
+			"org.apache.http.NoHttpResponseException: 54.165.195.40:80 failed to respond\n\tat org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:143)\n\tat org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)\n\tat org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)\n\tat org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)\n\tat org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:153)\n\tat org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)\n\tat org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)\n\tat org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:254)\n\tat org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)\n\tat org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)\n\tat org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)\n\tat org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)\n\tat org.apache.http.client.fluent.Executor.execute(Executor.java:206)\n\tat org.apache.http.client.fluent.Async$ExecRunnable.run(Async.java:79)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:745)",
+			"#date",
+			"1434611",
+			"updatePaidChatInfo",
+			"1434611",
+			"#date",
+			"66.171.188.57",
+			"#date",
+			"Success: true",
+			"MiscMethods::transferRoomCalled >> Success: true",
+			"up",
+			"exit",
+			"?userid=undefined",
 			"159.203.42.143",
 			"font",
 			"remove",
@@ -620,24 +789,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "ballz/js/game-v2.js",
+					"file": "ballz/js/game-v3-1.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5764,
+						"buffer_size": 11359,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								6349,
+								6349
 							]
 						],
 						"settings":
@@ -655,7 +824,7 @@
 								"current_ext": ".js",
 								"current_syntax": "JavaScript/JavaScript",
 								"enabled": false,
-								"last_updated": 1515672112.19
+								"last_updated": 1517831351.25
 							},
 							"open_with_edit": true,
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
@@ -663,52 +832,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 42.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "tipsy-tower/js/game-v4.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10173,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10154,
-								10154
-							]
-						],
-						"settings":
-						{
-							"color_helper.box_height": 18,
-							"color_helper.color_scheme": "Packages/Predawn/predawn.tmTheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.preview_meta":
-							{
-							},
-							"color_helper.scan":
-							{
-								"current_ext": ".js",
-								"current_syntax": "JavaScript/JavaScript",
-								"enabled": false,
-								"last_updated": 1515672112.19
-							},
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4208.0,
+						"translation.y": 3257.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -751,6 +875,10 @@
 	"output.find_results":
 	{
 		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 120.0
 	},
 	"pinned_build_system": "",
 	"project": "phaser-projects.sublime-project",

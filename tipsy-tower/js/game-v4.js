@@ -130,7 +130,7 @@ TheGame.prototype = {
         this.menuGroup.add(tap);
 
         var title = game.add.image(game.width / 2, tap.y - 470, 'title');
-        title.anchor.set(0.5);
+        title.anchor.set(0.5,0);
 
         this.menuGroup.add(title);
 
@@ -249,6 +249,7 @@ TheGame.prototype = {
         }
     },
     removeCrate: function() {
+        console.log(this.crateGroup.children.length);
         if(this.crateGroup.children.length > 0) {
             var tempCrate = this.crateGroup.getChildAt(0);
             var height = Math.round ((game.height - GROUNDHEIGHT - tempCrate.y - CRATEHEIGHT / 2) / CRATEHEIGHT) + 1;

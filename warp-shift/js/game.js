@@ -21,7 +21,7 @@ function block() {
         down: false,
         left: false,
         exit: false,
-        player: false,
+        player: false
     };
 
     for (var i = 0; i < arguments.length; i++) {
@@ -86,7 +86,7 @@ TheGame.prototype = {
         this.generateLevel();
     },
     generateLevel: function() {
-        var tileAndMargin = gameOptions.tile + gameOptions.tileMargin;
+        var tileAndMargin = gameOptions.tileSize + gameOptions.tileMargin;
 
         this.levelGroup = game.add.group();
 
@@ -96,38 +96,40 @@ TheGame.prototype = {
             this.tempLevel[i] = [];
 
             for (var j = 0; j < levels[this.level][i].length; j++) {
-                var tile = game.add.image(jk * tileAndMargin + gameOptions.tileSize / 2, i * tileAndMargin + gameOptions.tileSize / 2, "tile");
+                var tile = game.add.image(j * tileAndMargin + gameOptions.tileSize / 2, i * tileAndMargin + gameOptions.tileSize / 2, "tile");
                 tile.anchor.set(0.5);
 
                 this.levelGroup.add(tile);
 
-                if(!levels[this.level][i][j].up && !levels[this.level][i][j].right && !levels[this.level][i][j].down && !levels[this.level][i][j].left) {
+                var levelBlock = levels[this.level][i][j];
+
+                if(!levelBlock.up && !levelBlock.right && !levelBlock.down && !levelBlock.left) {
                     tile.frame = 0;
                 } else {
-                    if(levels[this.level][i][j].up) {
+                    if(levelBlock.up) {
                         tile.frame = 1;
                     }
 
-                    if(levels[this.level][i][j].right) {
+                    if(levelBlock.right) {
                         tile.frame = 2;
                     }
 
-                    if(levels[this.level][i][j].down) {
+                    if(levelBlock.down) {
                         tile.frame = 3;
                     }
 
-                    if(levels[this.level][i][j].left) {
+                    if(levelBlock.left) {
                         tile.frame = 4;
                     }
 
-                    if(levels[this.level][i][j].exit) {
+                    if(levelBlock.exit) {
                         var exit = game.add.image(0,0,"tile");
                         exit.anchor.set(0.5);
                         exit.frame = 6;
                         tile.addChild(exit);
                     }
 
-                    if(levels[this.level][i][j].player) {
+                    if(levelBlock.player) {
                         var player = game.add.image(0,0,"tile");
                         player.anchor.set(0.5);
                         player.frame = 5;
@@ -136,18 +138,18 @@ TheGame.prototype = {
                 }
 
                 this.tempLevel[i][j] = {
-                    up: levels[this.level][i][j].up,
-                    right: levels[this.level][i][j].right,
-                    down: levels[this.level][i][j].down,
-                    left: levels[this.level][i][j].left,
-                    exit: levels[this.level][i][j].exit,
-                    player: levels[this.level][i][j].player,
+                    up: levelBlock.up,
+                    right: levelBlock.right,
+                    down: levelBlock.down,
+                    left: levelBlock.left,
+                    exit: levelBlock.exit,
+                    player: levelBlock.player,
                     sprite: tile
-                }
+                };
             }
         }
 
         this.levelGroup.x = (game.width - this.levelGroup.width) / 2;
-        this.levelGroup.y = (game.height - this.levelGroup.height) / 2;
+        this.levelGroup.y = (game.height - this.levelGroup.width) / 2;
     }
 }
